@@ -14,7 +14,7 @@
 @keyframes animationHeaderDispair{
     0%{opacity: 1;};
     50%{opacity: 0.5;};
-    100%{opacity: 0;};
+    100%{opacity: 0.0;};
 }
 header{
     background-color: rgb(255, 255, 255);
