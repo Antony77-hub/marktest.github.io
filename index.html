@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/51f7ea6787.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#">
+            <h4>Antony artigos</h4>
+        </a>
+        <nav>
+            <li><a href="">HOME</a></li>
+            <li><a href="">HOME</a></li>
+            <li><a href="">HOME</a></li>
+            <li><a href="">HOME</a></li>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class='headhero'>
+            <h1>De universitário a <br>criador do Facebook <i class="fab fa-facebook-square" style="font-size: 3rem;"></i></h1>
+            <h2>Mark Zuckerberg, hoje criador do Facebook,<br>já foi um estudante de <a href="" style="color: white;">HAVARD</a></h2>
+            <a href="#conheca">Desça para ler mais<i class="fas fa-arrow-down" style="font-size: 2rem;margin-left: 10px;"></i></a>
+        </div>
+    </section>
+    <section class="conheca">
+        <h1>De gênio a bilhonário</h1>
+        <h2>Meio obvio isso, mas quem dera sermos bilhonarios também :)</h2>
+        <p>Zuckerberg começou a usar computadores e a escrever software ainda adolescente no ensino médio. Seu pai lhe
+            ensinou Atari Programação Básica em 1990 e, posteriormente, contratou o desenvolvedor de software David
+            Newman para lhe dar aulas particulares. Newman não hesitava em chamá-lo de "prodígio", acrescentando que era
+            "duro para ficar à frente dele." Zuckerberg também fez um curso de pós-graduação no assunto no Mercy College
+            perto de sua casa enquanto ele ainda estava no colégio.[2] Ele gostava de criar programas de computador,
+            especialmente as ferramentas de comunicação e jogos. Em um desses programas que criou, surgiu o “ZuckNet”, a
+            qual permitia que todos os computadores entre a casa e o consultório odontológico do seu pai pudessem se
+            comunicar usando o ping para o outro. No que pode ser considerado uma versão simplificada do AOL Instant
+            Messenger, que foi lançado no ano seguinte.</p>
+    </section>
+    <section class='carac'>
+        <h1>A pessoa</h1>
+        <figure>
+            <img src="../site_01_markZuck/assets/images/235px-MarkZuckerberg.jpg" alt="">
+            <caption>Mark Zuck :)</caption>
+        </figure>
+        <h2 style="margin-top: 30px;">Lorem ipsum dolor sit</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quasi dolores eveniet laudantium
+            praesentium quis officiis, porro hic inventore vero at necessitatibus impedit dolorum consequatur. Odio
+            aliquid sunt nam minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates voluptas
+            dolorem magnam quae provident eveniet deserunt omnis ut magni pariatur dignissimos laboriosam placeat,
+            voluptate nesciunt sequi, quis facilis ipsam aliquid.Lorem ipsum dolor sit Lorem Lorem Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Cum quam perspiciatis exercitationem dolore doloribus maxime a delectus
+            iste reprehenderit, esse iusto repudiandae ratione adipisci, laboriosam vitae. Natus aut sapiente autem.</p>
+    </section>
+    <footer>
+        <ul>
+            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-vimeo"></i></a></li>
+        </ul>
+        <p style="margin-top: 30px;text-align: center;">Me siga em minhas redes!</p>
+    </footer>
+    <script>
+        var headhero = document.getElementsByTagName('section')[0]
+        var scrollConstValue
+        var already_animated=false
+        var header = document.getElementsByTagName('header')[0]
+        window.onscroll = function (e) {
+            if(document.documentElement.scrollTop < 580){
+                headhero.style.paddingTop="0px"
+                header.style.position="relative"
+            }else if(document.documentElement.scrollTop < scrollConstValue){
+                headhero.style.paddingTop="180px"
+                header.style.position = "fixed"
+                header.style.animationName="animationHeader"
+                header.style.animationDuration=".5s"
+            }else if(document.documentElement.scrollTop > scrollConstValue){
+                headhero.style.paddingTop="0px"
+                header.style.position = "relative"
+            }
+            setConstValueScroll()
+        }
+        function setConstValueScroll(){
+            scrollConstValue = document.documentElement.scrollTop
+        }
+    </script>
+</body>
+
+</html>
