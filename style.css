@@ -57,7 +57,7 @@ i:hover{
 }
 /*HERO*/
 .hero{
-    background-image: url(../images/mark-zuckerberg.jpg);
+    background-image: url(images/mark-zuckerberg.jpg);
     background-size: cover;
     background-position: center;
     background-clip: border-box;
