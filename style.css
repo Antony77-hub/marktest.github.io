@@ -7,14 +7,12 @@
     box-sizing: border-box;
 }
 @keyframes animationHeader{
-    0%{opacity: 0;}
-    50%{opacity: 0.5;}
-    100%{opacity: 1;}
-}
-@keyframes animationHeaderDispair{
-    0%{opacity: 1;};
-    50%{opacity: 0.5;};
-    100%{opacity: 0.0;};
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
 }
 header{
     background-color: rgb(255, 255, 255);
